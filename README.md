@@ -4,6 +4,8 @@ FSM(Finite State Machine) is an abstract machine that can be in exactly one of a
 
 In this repo, we used a simple .NET core-based console FSM to demonstrate SQL Start up state transition.
 
+![SQLSTARTUPFSM](SQLSTARTUPFSM.png)
+
 ## Using SQLStartupFSM
 
 You can simply `git clone` this project to get started. It is recommended that you don't preserve history of the project (it isn't generally meaningful) for your repo, but make a copy and `git init` your project from source.
