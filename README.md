@@ -15,6 +15,7 @@ You can simply `git clone` this project to get started. It is recommended that y
 1. Install VSCode or Visual Studio with .NET Core 6.
 2. Clone this repo and use VSCode or Visual Studio to open the project.
 3. For VSCode, Use F5 to run this sample.
+For Visual Studio, Use CTRL+F5 to run this sample.
 4. Input the Event Number to triger the transition or q/esc to leave the SQLStartupFSM.
 
 
