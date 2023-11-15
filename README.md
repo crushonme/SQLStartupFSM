@@ -1,14 +1,12 @@
-# New Repo Project
+# SQLStartupFSM
 
-The new-repo project is a default template for .NET Foundation projects. It's also probably a fine start for other .NET projects (have at it, but change the license). It contains the correct license, a decent README, and initial project structure (including a standard .gitignore for the Visual Studio family of products).
+FSM(Finite State Machine) is an abstract machine that can be in exactly one of a finite number of states at any given time. The FSM can change from one state to another in response to some inputs; the change from one state to another is called a transition. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition. 
 
-You can learn more about the project from the project [Documentation](Documentation).
+In this repo, we used a simple .NET core-based console FSM to demonstrate SQL Start up state transition.
 
-## Using New Repo
+## Using SQLStartupFSM
 
 You can simply `git clone` this project to get started. It is recommended that you don't preserve history of the project (it isn't generally meaningful) for your repo, but make a copy and `git init` your project from source.
-
-Consult [CHECKLIST.md](CHECKLIST.md) for helpful suggestions on preparing your repo to go public.
 
 ## Building
 
@@ -24,15 +22,3 @@ to clarify expected behavior in our community. For more information, see the [.N
 ## License
 
 This project is licensed with the [MIT license](LICENSE).
-
-## .NET Foundation
-
-New Repo is a [.NET Foundation project](https://dotnetfoundation.org/projects).
-
-## Related Projects
-
-You should take a look at these related projects:
-
-- [.NET Core](https://github.com/dotnet/core)
-- [ASP.NET](https://github.com/aspnet)
-- [Mono](https://github.com/mono)
