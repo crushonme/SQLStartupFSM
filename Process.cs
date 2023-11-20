@@ -51,7 +51,7 @@ namespace SQLStartupFSM
                 return 17 + 31 * CurrentState.GetHashCode() + 31 * mEvent.GetHashCode();
             }
 
-            public override bool Equals(Object? obj)
+            public override bool Equals(Object obj)
             {
                 if ((obj == null) || !this.GetType().Equals(obj.GetType()))
                 {
@@ -59,7 +59,7 @@ namespace SQLStartupFSM
                 }
                 else
                 {
-                    StateTransition? other = obj as StateTransition;
+                    StateTransition other = obj as StateTransition;
                     return other != null && this.CurrentState == other.CurrentState && this.mEvent == other.mEvent;
                 }
 
