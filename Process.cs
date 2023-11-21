@@ -90,7 +90,7 @@ namespace SQLStartupFSM
                 { new StateTransition(FSMState.OFFLINE, FSMEvent.RESTOREDATABASE), FSMState.RESTORING },
                 { new StateTransition(FSMState.RECOVERYPENDING, FSMEvent.RESTOREDATABASE), FSMState.RESTORING },
                 { new StateTransition(FSMState.RECOVERYPENDING, FSMEvent.ALERTONLINE), FSMState.RECOVERING },
-                { new StateTransition(FSMState.ONLINE, FSMEvent.ALERTEMERGENCY), FSMState.OFFLINE },
+                { new StateTransition(FSMState.ONLINE, FSMEvent.ALERTOFFLINE), FSMState.OFFLINE },
                 { new StateTransition(FSMState.ONLINE, FSMEvent.BACKUPWITHNORECOVERY), FSMState.RESTORING },
                 { new StateTransition(FSMState.ONLINE, FSMEvent.RESTOREDATABASE), FSMState.RESTORING }
             };
@@ -105,7 +105,6 @@ namespace SQLStartupFSM
                 Console.WriteLine($"The Event {ev.ToString()} is not a valid event for current State:{CurrentState}.");
                 Console.WriteLine($"Keep Current State...{CurrentState}...");
                 nextState = CurrentState;
-                
             }
             return nextState;
             
